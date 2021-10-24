@@ -1,0 +1,119 @@
+$gutter: 2.5rem;
+
+header {
+  margin-bottom: 4.9rem;
+}
+#topbar {
+  margin: 0;
+  top: -0.1rem;
+  padding: 0 $gutter;
+  background-color: $white;
+  box-shadow: 1px 2px 2px rgba(1, 1, 1, 0.1);
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+
+  .el-row {
+    width: 100%;
+  }
+
+  .logo {
+    img {
+      vertical-align: middle;
+      max-width: 15rem;
+    }
+  }
+
+  .header-menu {
+    text-align: right;
+
+    ul {
+      // margin: $gutter / 4 0;
+      padding: 0;
+      margin: 0;
+      li {
+        vertical-align: middle;
+        margin-right: 1.95rem;
+        display: inline-block;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          @include menu-item($warm-grey);
+          transition: 0.3s ease-in;
+          &:hover {
+            color: $cherry;
+          }
+        }
+
+        a.nuxt-link-exact-active {
+          color: $cherry;
+        }
+
+        .menu-button {
+          display: block;
+          padding: 0.75rem 3.125rem;
+          border-radius: 1.25rem;
+          background-color: $white;
+          font-size: 1rem;
+          color: $cherry;
+          position: relative;
+          overflow: hidden !important;
+
+          &:after {
+            font-size: 1.15rem;
+            font-family: element-icons !important;
+            font-style: normal;
+            line-height: 1;
+            vertical-align: baseline;
+            position: absolute;
+            margin-top: 1px;
+            right: 101%;
+            content: '\e6dc';
+            color: #fff;
+            transition: right 0.4s;
+            transform: rotateY(-180deg);
+          }
+          @include slide-hover-right($cherry, $white);
+          &:hover:after {
+            color: $white;
+            right: 1.25rem;
+            transform: rotateY(0);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #topbar {
+    height: 5.6rem;
+    padding: 0 1.75rem;
+
+    .toggleMobileWrapper {
+      padding-right: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+
+      div {
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        margin-bottom: 6px;
+        background-color: $qs-blue;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

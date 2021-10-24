@@ -1,0 +1,258 @@
+@font-face {
+  font-family: 'cv-icons';
+  src: url('~assets/fonts/cv-icons.eot?56921000');
+  src: url('~assets/fonts/cv-icons.eot?56921000#iefix')
+      format('embedded-opentype'),
+    url('~assets/fonts/cv-icons.woff2?56921000') format('woff2'),
+    url('~assets/fonts/cv-icons.woff?56921000') format('woff'),
+    url('~assets/fonts/cv-icons.ttf?56921000') format('truetype'),
+    url('~assets/fonts/cv-icons.svg?56921000#cv-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^='cv-icons']:before,
+[class*=' cv-icons']:before {
+  font-family: 'cv-icons';
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.cv-chat-o:before {
+  content: '\e800';
+} /* '' */
+.cv-chat:before {
+  content: '\e801';
+} /* '' */
+.cv-envelope:before {
+  content: '\e802';
+} /* '' */
+.cv-whatsapp:before {
+  content: '\e803';
+} /* '' */
+.cv-facebook:before {
+  content: '\e804';
+} /* '' */
+.cv-building:before {
+  content: '\e805';
+} /* '' */
+.cv-letter:before {
+  content: '\e806';
+} /* '' */
+.cv-instagram:before {
+  content: '\e807';
+} /* '' */
+.cv-location-mark:before {
+  content: '\e808';
+} /* '' */
+.cv-price:before {
+  content: '\e809';
+} /* '' */
+.cv-beds {
+  //Fix icon size too large
+  font-size: 13px;
+  margin-right: 11px;
+}
+.cv-beds:before {
+  content: '\e80a';
+} /* '' */
+
+@font-face {
+  font-family: 'cv-iconx';
+  src: url('~assets/fonts/fontello.eot?70581550');
+  src: url('~assets/fonts/fontello.eot?70581550#iefix')
+      format('embedded-opentype'),
+    url('~assets/fonts/fontello.woff2?70581550') format('woff2'),
+    url('~assets/fonts/fontello.woff?70581550') format('woff'),
+    url('~assets/fonts/fontello.ttf?70581550') format('truetype'),
+    url('~assets/fonts/fontello.svg?70581550#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?70581550#fontello') format('svg');
+  }
+}
+*/
+
+[class^='cv-iconx']:before,
+[class*='cv-iconx']:before {
+  font-family: 'cv-iconx';
+  font-style: normal;
+  font-weight: normal;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.cv-car:before {
+  content: '\e800';
+} /* '' */
+.cv-shield:before {
+  content: '\e801';
+} /* '' */
+.cv-vase:before {
+  content: '\e802';
+} /* '' */
+.cv-bike:before {
+  content: '\e803';
+} /* '' */
+.cv-usb:before {
+  content: '\e804';
+} /* '' */
+.cv-washer:before {
+  content: '\e805';
+} /* '' */
+.cv-link:before {
+  content: '\e806';
+} /* '' */
+.cv-phone:before {
+  content: '\e808';
+} /* '' */
+
+.cv-washer {
+  font-size: 1.85em;
+}
+
+.cv-link {
+  font-size: 1.2em !important;
+}
+
+.cv-bike,
+.cv-car {
+  margin-right: 15px;
+}
+
+.cv-car {
+  font-size: 1.2em !important;
+}
+
+@font-face {
+  font-family: 'specs';
+  src: url('~assets/fonts/specs.eot?40802202');
+  src: url('~assets/fonts/specs.eot?40802202#iefix') format('embedded-opentype'),
+    url('~assets/fonts/specs.woff2?40802202') format('woff2'),
+    url('~assets/fonts/specs.woff?40802202') format('woff'),
+    url('~assets/fonts/specs.ttf?40802202') format('truetype'),
+    url('~assets/fonts/specs.svg?40802202#specs') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?40802202#fontello') format('svg');
+  }
+}
+*/
+
+[class^='specs-icon']:before,
+[class*=' specs-icon']:before {
+  font-family: 'specs';
+  font-style: normal;
+  font-weight: normal;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.spec-grana:before {
+  content: '\e800';
+} /* '' */
+.spec-torre:before {
+  content: '\e801';
+} /* '' */
+.spec-quarto:before {
+  content: '\e802';
+} /* '' */
+.spec-banheiro:before {
+  content: '\e803';
+} /* '' */
+.spec-carro:before {
+  content: '\e804';
+} /* '' */

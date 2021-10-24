@@ -1,0 +1,86 @@
+$size_compensator: 6px;
+
+@mixin montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@mixin ms-bold {
+  @include montserrat();
+  font-weight: 700;
+}
+
+@mixin ms-medium {
+  @include montserrat();
+  font-weight: 500;
+}
+
+@mixin ms-regular {
+  @include montserrat();
+  font-weight: 400;
+}
+
+@mixin ms-light {
+  @include montserrat();
+  font-weight: 300;
+}
+
+@mixin ms-xlight {
+  @include montserrat();
+  font-weight: 200;
+}
+
+// @mixin page-subtitle($color) {
+//   @include ms-bold();
+//   font-size: 15px + $size_compensator;
+//   font-stretch: normal;
+//   font-style: normal;
+//   line-height: 1.23;
+//   letter-spacing: normal;
+//   color: $color;
+// }
+
+@mixin menu-item($color) {
+  -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0);
+  @include ms-bold();
+  font-size: 1rem;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  text-decoration: none;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color;
+}
+
+// @mixin banner-title($color) {
+//   @include ms-bold();
+//   font-size: 38px + $size_compensator;
+//   font-stretch: normal;
+//   font-style: normal;
+//   line-height: 1.22;
+//   letter-spacing: normal;
+//   text-align: left;
+//   color: $color;
+// }
+
+@mixin text-paragraph($color) {
+  @include ms-regular();
+  font-size: 10px + $size_compensator;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.04px;
+  text-align: left;
+  color: $color;
+}
+
+// @mixin form-label-placeholder($color) {
+//   @include ms-medium();
+//   font-size: 10px + $size_compensator;
+//   font-stretch: normal;
+//   font-style: italic;
+//   line-height: 1.2;
+//   letter-spacing: normal;
+//   text-align: center;
+//   color: $color;
+// }

@@ -14,6 +14,8 @@ import Termos from './pages/TermosCondicoes'
 import Politicas from './pages/PoliticaPrivacidade'
 import NotFound from './pages/404'
 
+import '../assets/scss/index.scss'
+
 export default function App() {
   return (
     <Router>
