@@ -1,0 +1,105 @@
+$gutter: 2.5rem;
+
+footer {
+  background-color: #fff;
+  color: $black-two;
+  padding: 4.5rem $gutter 2rem $gutter;
+
+  .el-row{
+    display: flex;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 1.5rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &.strong {
+        font-weight: bold;
+      }
+    }
+  }
+
+  a {
+    color: $black-two;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 0.9rem;
+
+    &:hover,
+    &:active {
+      color: lighten($color: $black-two, $amount: 40);
+      text-decoration: underline;
+    }
+  }
+
+  .custom-mg{
+    margin-left:-7.5px;
+    margin-right:-7.5px;
+  }
+
+  .custom-pd{
+    padding-left:7.5px;
+    padding-right:7.5px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  footer {
+    padding: 4rem 1.75rem 8.5rem 1.75rem;
+
+    .el-row{
+      flex-direction: column;
+    }
+
+    ul {
+      li {
+        margin-bottom: 1.1rem !important;
+
+        &:last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+    .el-col {
+      margin-bottom: 2rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    li,
+    a {
+      font-size: 1.25rem !important;
+    }
+    .emps,
+    .sm {
+      a {
+        padding-left: 1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px){
+
+  footer{
+    .el-col-sm-5 {
+        width: 20.83333%;
+    }
+
+    .el-col-sm-4 {
+      width: 16.66667%;
+    }
+
+    .el-row{
+      display: flex;
+    }
+  }
+}
