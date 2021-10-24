@@ -1,0 +1,501 @@
+@import './fonts.scss';
+@import './cv-icons-font.scss';
+// Resets
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (max-width: 1599px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 1399px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1320px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  html {
+    font-size: 11px;
+  }
+  .crslDots {
+    bottom: -3.5rem !important;
+  }
+
+  #page-sobre .crslDots {
+    bottom: -4rem !important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  html {
+    font-size: 10px;
+  }
+
+  #topbar .header-menu ul li {
+    margin-right: 1.4rem !important;
+
+    &:last-child {
+      margin-right: 0 !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 11px;
+  }
+
+  .container_app {
+    padding-left: 1.75rem !important;
+    padding-right: 1.75rem !important;
+  }
+}
+
+//Colors
+$white: #ffffff;
+$black-15: rgba(0, 0, 0, 0.15);
+$black: #000000;
+$warm-grey: #707070;
+$black-two: #010101;
+$cherry: #cf0025;
+$dirty-blue: #4375a2;
+$pinkish-red: #ec2024;
+$flat-blue: #4177a6;
+$cherry-two: #ce0025;
+$white-two: #e5e5e5;
+$greyish-brown: #4a4a4a;
+$flat-blue-two: #4278a6;
+$off-blue: #5888b0;
+$off-blue-two: #5888b1;
+$qs-blue: #4177a6;
+$success-green: #67c23a;
+// Default elements
+
+// Slide hover buttons
+@mixin slide-hover-right($bg, $text) {
+  border: 2px solid $bg;
+  box-shadow: inset 0 0 0 0 $bg;
+  -webkit-transition: box-shadow ease-out 0.4s;
+  -moz-transition: box-shadow ease-out 0.4s;
+  transition: box-shadow ease-out 0.4s;
+  &:hover {
+    box-shadow: inset 23rem 0 0 0 $bg;
+    color: $text !important;
+  }
+  &:hover > * {
+    color: $text !important;
+  }
+}
+
+@mixin btn-primary {
+  @include ms-bold();
+  font-size: 1rem;
+  padding: 1.25rem 3.75rem;
+  border-radius: 3.125rem;
+  text-decoration: none !important;
+  transition: 0.4s ease-in;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-primary-blue {
+  @include btn-primary();
+  color: $white;
+  background-color: $flat-blue;
+  border: 2px solid transparent;
+  cursor: pointer;
+
+  &:hover {
+    color: $flat-blue;
+    border: 2px solid $flat-blue;
+    background-color: $white;
+  }
+}
+
+.btn-primary-white {
+  @include btn-primary();
+  color: $cherry;
+  background-color: $white;
+  border: 2px solid transparent;
+  cursor: pointer;
+
+  &:hover {
+    color: $white;
+    border: 2px solid $white;
+    background-color: $cherry;
+  }
+}
+
+.t-cherry {
+  color: $cherry;
+  a {
+    color: $cherry;
+  }
+}
+
+.btn-primary-red {
+  @include btn-primary();
+  font-size: 1.25rem;
+  color: #fff;
+  background-color: $pinkish-red;
+  border: 2px solid $pinkish-red;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    color: $pinkish-red;
+    background-color: #fff;
+  }
+}
+
+.wrap-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  .container_app,
+  .el-container,
+  .el-main {
+    height: 100%;
+    position: relative;
+  }
+}
+
+.container_app {
+  width: 100%;
+  padding-right: 0.8rem;
+  padding-left: 0.8rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container_app {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container_app {
+    max-width: 715px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container_app {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container_app {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container_app {
+    max-width: 1320px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container_app {
+    max-width: 1450px;
+  }
+}
+
+@mixin appText {
+  font-size: 1.25rem;
+}
+
+@mixin img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+@mixin marginTopSections($marginTop) {
+  margin-top: $marginTop;
+}
+
+@mixin appTitle($mb) {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: $mb;
+}
+
+.appTitle {
+  font-size: 1.875rem;
+  font-weight: bold;
+
+  &.mb {
+    margin-bottom: 3rem;
+  }
+}
+
+@mixin colorizedSubtitle($color, $mb) {
+  color: $color;
+  margin-bottom: $mb;
+  font-weight: 800;
+}
+
+@mixin appText {
+  font-size: 1.25rem;
+}
+
+.appText {
+  font-size: 1.25rem;
+  &.blueQ {
+    font-weight: bold;
+    color: $qs-blue;
+    margin-bottom: 1rem;
+  }
+}
+
+form {
+  .wrapper {
+    position: relative;
+    .float-placeholder {
+      font-size: 1.2rem;
+      position: absolute;
+      top: 25%;
+      left: 1.25rem;
+      font-weight: 600;
+      font-style: italic;
+      transform: scale(1) translateY(0);
+      transition: all 0.3s;
+
+      &.active {
+        transform: scale(0.85) translateY(-55%);
+        left: 0.5rem;
+        top: 0;
+        padding: 0 1rem;
+      }
+    }
+  }
+
+  &#formSimulacao {
+    .wrapper {
+      .float-placeholder {
+        background-color: $cherry;
+      }
+    }
+  }
+
+  &#contactForm {
+    .wrapper {
+      .float-placeholder {
+        background-color: $flat-blue;
+      }
+    }
+  }
+}
+
+.appInput {
+  min-width: 100%;
+  position: relative;
+
+  input,
+  textarea,
+  select {
+    font-size: 1.25rem;
+    border: 1px solid #fff;
+    border-radius: 1.75rem;
+    height: 4.28rem;
+    color: #fff;
+    background-color: transparent;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-left: 1.25rem;
+
+    &::placeholder {
+      font-style: italic;
+      color: #fff;
+    }
+  }
+  .el-input__icon {
+    height: calc(100% - 1.25rem);
+    font-size: 1.5rem !important;
+    color: #fff !important;
+    margin-right: 1rem;
+  }
+
+  .el-checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+  .el-checkbox__inner {
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border-radius: 0.6rem;
+  }
+  .el-checkbox__label {
+    padding-left: 0;
+    .el-checkbox__label {
+      padding-left: 1.5rem;
+      white-space: initial;
+      font-size: 1.15rem;
+      color: #fff;
+      line-height: 1.4;
+
+      a {
+        color: #fff;
+        font-size: 1.15rem;
+        display: inline;
+      }
+    }
+  }
+  .el-checkbox__input.is-checked + .el-checkbox__label {
+    color: #fff;
+  }
+  .el-checkbox__input.is-checked .el-checkbox__inner,
+  .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color: transparent;
+    border-color: #fff;
+  }
+
+  .el-checkbox__inner::after {
+    border: 3px solid #fff;
+    border-left: 0;
+    border-top: 0;
+    height: 1.8rem;
+    width: 0.55rem;
+    left: 0.91rem;
+    top: unset;
+    bottom: 0.43rem;
+  }
+
+  .el-textarea__inner {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    min-height: 9rem !important;
+    @include ms-regular;
+    border-radius: 1.25rem;
+  }
+}
+
+.crslDots {
+  bottom: -3rem;
+  li {
+    margin: 0 4px;
+    button {
+      height: 1.05rem;
+      width: 1.05rem;
+      background-color: #fff;
+      border: 1px solid $warm-grey;
+      border-radius: 50%;
+      &:before {
+        content: unset;
+      }
+    }
+
+    &.slick-active {
+      button {
+        border: 1px solid $cherry_two;
+        background-color: $cherry_two;
+      }
+    }
+  }
+}
+
+.slick-slide {
+  .item {
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+//style copy
+.el-row--flex{
+  width: 100%;
+  display: flex;
+
+  &.is-align-middle{
+    align-items: center;
+  }
+
+  &.is-justify-center{
+    justify-content: center;
+  }
+}
+
+.el-col-24 {
+  width: 100%;
+}
+
+.el-col-18 {
+  width: 75%;
+}
+
+.el-col-sm-6 {
+  width: 25%;
+}
+
+[class*=el-col-] {
+  float: left;
+  box-sizing: border-box;
+}
+
+.el-col-offset-3 {
+  margin-left: 12.5%;
+}
+
+@media only screen and (min-width: 768px){
+  .hidden-sm-and-up {
+      display: none!important;
+  }
+}
+
+#topbar .header-menu ul li{
+  vertical-align: middle;
+  margin-right: 1.95rem;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 767px){
+  .hidden-xs-only {
+      display: none!important;
+  }
+}

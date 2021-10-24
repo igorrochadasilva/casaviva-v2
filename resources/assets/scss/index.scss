@@ -1,3 +1,22 @@
+//tailwindcss
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+//utils
+@import "./utils/styleguide.scss";
+
+//Global Components
+@import "./components/Header/index.scss";
+@import "./components/MobileHeader/index.scss";
+
+//Pages style
+
+//font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat,sans-serif;
+}
