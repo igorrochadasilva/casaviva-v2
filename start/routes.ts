@@ -21,6 +21,42 @@
 import Route from '@ioc:Adonis/Core/Route'
 import { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 // Other Routes...
-Route.get('*', async ({ view }: HttpContextContract) => {
+Route.get('/', async ({ view }: HttpContextContract) => {
   return view.render('index')
 }).as('not_found')
+
+Route.get('/minha-casa-minha-vida', async ({ view }: HttpContextContract) => {
+  return view.render('index')
+})
+
+Route.get('/simulador', async ({ view }: HttpContextContract) => {
+  return view.render('index')
+})
+
+Route.get('/sobre-casaviva', async ({ view }: HttpContextContract) => {
+  return view.render('index')
+})
+
+Route.get('/sustentabilidade', async ({ view }: HttpContextContract) => {
+  return view.render('index')
+})
+
+Route.get('/fale-conosco', async ({ view }: HttpContextContract) => {
+  return view.render('index')
+})
+
+Route.get('/ficha/casaviva-morumbi', async ({ view }: HttpContextContract) => {
+  return view.render('index')
+})
+
+Route.get('/lyne-pirituba', async ({ view }: HttpContextContract) => {
+  return view.render('index')
+})
+
+Route.get('/termos-e-condicoes', async ({ view }: HttpContextContract) => {
+  return view.render('index')
+})
+
+Route.get('/politica-de-privacidade', async ({ view }: HttpContextContract) => {
+  return view.render('index')
+})
