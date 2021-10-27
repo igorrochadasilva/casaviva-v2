@@ -1,0 +1,236 @@
+#simulacaoSec {
+  background-color: $cherry;
+  padding: 4.5rem 0;
+  color: #fff;
+
+  h1 {
+    @include appTitle(1rem);
+  }
+
+  .btn-primary-blue {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 2.75rem;
+    color: $white;
+    font-size: 1.25rem;
+    position: relative;
+    &:hover,
+    &:active {
+      border-color: $success-green;
+      background-color: $success-green;
+      color: #fff;
+
+      &:after {
+        right: -2.5rem;
+        color: #fff;
+      }
+    }
+
+    &:after {
+      font-size: 1.5rem;
+      font-family: element-icons !important;
+      font-style: normal;
+      line-height: 1;
+      vertical-align: baseline;
+      position: relative;
+      right: -1rem;
+      top: 0.188rem;
+      content: '\e6dc';
+      color: $white;
+      transition: 0.3s ease-in all;
+    }
+  }
+
+  img {
+    max-width: 25rem;
+    height: auto;
+  }
+
+  #dialogSimulacao {
+    h2 {
+      font-size: 2rem;
+      color: $cherry;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      color: $black-two;
+    }
+
+    h4 {
+      font-size: 1.25rem;
+
+      span {
+        color: $cherry;
+      }
+      margin-bottom: 1rem;
+    }
+  }
+
+  .n-ml-10{
+    margin-left: 10px;
+  }
+  .n-mr-10{
+    margin-right: 10px;
+  }
+
+  .pr-10{
+    padding-right: 10px;
+  }
+
+  .pl-10{
+    padding-left: 10px;
+  }
+
+  .dp-nn{
+    display: none;
+  }
+
+  .mw-custom{
+    min-width: 292.688px;
+  }
+
+  .n-mb-17{
+    margin-bottom: -17px;
+  }
+
+  .n-mr-17{
+    margin-right: -17px;
+  }
+
+  .tsf-translateX-0{
+    transform: translateX(0%);
+  }
+
+  .mg-t-15vh{
+    margin-top: 15vh;
+  }
+
+  .dp-none{
+    display: none;
+  }
+
+  .wd-100{
+    width: 100%;
+  }
+
+  .dp-flex{
+    display: flex;
+    margin: 0;
+  }
+
+  .el-input__inner{
+    width: 100%;
+  }
+
+  .flex-48{
+    flex:48%
+  }
+  .flex-52{
+    flex: 52%;
+  }
+
+  .el-checkbox__inner.checkbox-styled{
+    display: inline-block;
+    position: relative;
+    border: 1px solid #dcdfe6;
+    border-radius: 2px;
+    box-sizing: border-box;
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    z-index: 1;
+    transition: border-color .25s cubic-bezier(.71,-.46,.29,1.46),background-color .25s cubic-bezier(.71,-.46,.29,1.46);
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border-radius: 0.6rem;
+  }
+
+  .el-checkbox__inner.checkbox-styled::after {
+    border: 3px solid #fff;
+    border-left: 0;
+    border-top: 0;
+    height: 1.8rem;
+    width: 0.55rem;
+    left: 0.91rem;
+    top: unset;
+    bottom: 0.43rem;
+  }
+
+  .el-checkbox__original{
+    opacity: 0;
+    outline: 0;
+    position: absolute;
+    margin: 0;
+    width: 0;
+    height: 0;
+    z-index: -1;
+  }
+
+  .el-checkbox__label{
+    display: block;
+  }
+
+  .el-checkbox__label a{
+    text-decoration: underline;
+    padding-left: 5px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #simulacaoSec {
+    padding: 4rem 0 4rem 0;
+    .row {
+      flex-wrap: wrap;
+
+      .first-col-mob {
+        text-align: center;
+        margin-bottom: 4rem;
+      }
+    }
+
+    img {
+      margin: auto;
+      max-width: 19rem;
+      margin-top: 0.5rem;
+    }
+
+    .appInput {
+      min-width: 100%;
+      input,
+      textarea,
+      select {
+        font-size: 1.35rem;
+        border: 1px solid #fff;
+        height: 5rem;
+        border-radius: 1rem;
+      }
+    }
+
+    .dp-flex{
+      flex-direction: column;
+    }
+
+    .pr-10{
+      padding: 0;
+    }
+
+    .pl-10{
+      padding: 0;
+    }
+  }
+
+  #dialogSimulacao {
+    .el-dialog {
+      width: 95%;
+    }
+
+    h2,
+    h4 {
+      word-break: initial;
+    }
+  }
+}
