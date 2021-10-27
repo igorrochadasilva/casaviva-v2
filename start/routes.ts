@@ -21,7 +21,7 @@
 import Route from '@ioc:Adonis/Core/Route'
 import { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 // Other Routes...
-Route.get('/', async ({ view }: HttpContextCosntract) => {
+Route.get('/', async ({ view }: HttpContextContract) => {
   return view.render('index')
 }).as('not_found')
 
