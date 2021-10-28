@@ -1,0 +1,375 @@
+@media only screen and (max-width: 767px) {
+  #page-mcmv {
+    #bannermcmv {
+      h1 {
+        font-size: 3.75rem;
+        margin-top: 3rem;
+      }
+    }
+
+    #questionsMcmv,
+    #documentacaoMcmv {
+      padding-bottom: 2.5rem;
+      h3 {
+        @include appTitle(2.5rem);
+      }
+    }
+
+    .items-doc {
+      div {
+        width: 100%;
+      }
+      h5 {
+        font-weight: bold;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.spaced {
+  margin-top: 4rem;
+  font-size: 2rem;
+  text-align: center;
+
+  span {
+    color: $cherry;
+  }
+}
+
+.items-doc {
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 0 -0.5rem;
+  }
+  h5 {
+    margin: 0 0.5rem 1rem 0.5rem;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(112, 112, 112, 0.5);
+    border-radius: 1.875rem;
+    padding: 0 2rem;
+    height: 3rem;
+    color: $flat-blue;
+  }
+
+  ul {
+    margin: 2rem 0 !important;
+  }
+}
+
+.container_app {
+  display: flex;
+  align-items: center;
+}
+
+#bannermcmv {
+  position: relative;
+  img {
+    min-width: 100%;
+    max-width: 100%;
+    display: block;
+  }
+  h1 {
+    font-size: 4.7rem;
+    color: #fff;
+    white-space: pre-line;
+    line-height: 1.05;
+    font-weight: 700;
+  }
+}
+
+#infosmcmv {
+  margin: 25px;
+  .el-row {
+    padding: 4.5rem 0;
+  }
+}
+
+#questionsMcmv,
+#documentacaoMcmv {
+  padding: 0 0 4.5rem 0;
+  .item {
+    margin-bottom: 3.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  h3 {
+    @include appTitle(1.75rem);
+  }
+
+  h4 {
+    @include appText;
+    @include colorizedSubtitle($qs-blue, 1rem);
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    @include appText;
+    position: relative;
+    text-indent: 0.5rem;
+
+    &:before {
+      font-size: 0.7rem;
+      font-family: element-icons !important;
+      font-style: normal;
+      line-height: 1;
+      vertical-align: baseline;
+      position: relative;
+      left: -0.5rem;
+      top: -0.1rem;
+      content: '\e6dc';
+      color: $black_two;
+      transition: 0.3s ease-in all;
+      font-weight: bold;
+    }
+  }
+
+  .stepByStep {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    li {
+      width: 50%;
+      min-height: 12rem;
+      text-decoration: none;
+      .status {
+        position: relative;
+        .info {
+          padding-left: 4rem;
+          line-height: 12rem;
+          h5 {
+            line-height: 1;
+            display: inline-block;
+            border: 1px solid rgba(112, 112, 112, 0.5);
+            padding: 1rem;
+            border-radius: 1.875rem;
+            color: #4177a6;
+          }
+        }
+        &:before {
+          content: '';
+          width: 4rem;
+          height: 4rem;
+          background-color: $cherry;
+          border-radius: 4rem;
+          border: 1px solid $cherry;
+          position: absolute;
+          top: 4rem;
+        }
+      }
+      &:before {
+        content: none;
+      }
+      &.right {
+        border-left: 2px solid $flat-blue;
+        align-self: flex-end;
+        text-align: left;
+        .status {
+          position: relative;
+          .pic {
+            display: inline-block;
+            position: absolute;
+            top: 4.6rem;
+            left: -1.85rem;
+            img {
+              width: 3rem;
+            }
+          }
+          &:before {
+            left: -2rem;
+          }
+        }
+      }
+      &.left {
+        width: 50%;
+        margin-left: 2px;
+        align-self: flex-start;
+        text-align: right;
+        border-right: 2px solid $flat-blue;
+        .status {
+          .pic {
+            display: inline-block;
+            position: absolute;
+            top: 4.6rem;
+            right: -1.5rem;
+            img {
+              width: 3rem;
+            }
+          }
+          .info {
+            padding-left: 0;
+            padding-right: 4rem;
+          }
+          &:before {
+            right: -2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+#documentacaoMcmv {
+  padding: 0 0 4.5rem 0 !important;
+  .item {
+    margin-bottom: 2.5rem;
+  }
+}
+
+// mcmvSection
+@media only screen and (max-width: 767px) {
+  #mcmvSection {
+    .el-row {
+      flex-wrap: wrap;
+      // padding: 2rem 0 4.5rem 0;
+    }
+
+    img {
+      margin: 2.5rem auto 0.75rem auto !important;
+      width: 14rem;
+    }
+
+    &.empPage {
+      .nd {
+        margin-top: 4rem;
+      }
+
+      img {
+        margin: 0 auto 2.5rem auto !important;
+      }
+    }
+
+    .items-doc {
+      div {
+        width: 100%;
+      }
+      h5 {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+#mcmvSection {
+
+  .items-doc {
+    margin-top: 2rem;
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0 -0.5rem;
+    }
+    h5 {
+      margin: 0 0.5rem 1rem 0.5rem;
+      display: flex;
+      align-items: center;
+      background-color: $flat-blue;
+      border-radius: 1.875rem;
+      padding: 0 2rem;
+      height: 3rem;
+      color: $white;
+    }
+
+    ul {
+      margin: 2rem 0 !important;
+    }
+  }
+
+  .sectionSeparator {
+    display: flex;
+    justify-content: center;
+    hr {
+      border-top: 1px solid rgba($color: $black-two, $alpha: 0.1);
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 4.5rem;
+    }
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: 5rem;
+    max-width: 11rem;
+  }
+  h3 {
+    @include appTitle(1.75rem);
+    // white-space: pre-line;
+  }
+  p {
+    @include appText;
+  }
+
+  &.empPage {
+    padding: 4rem 0;
+    background-color: rgba($color: #000000, $alpha: 0.05);
+    h2 {
+      @include appTitle(2rem);
+      white-space: pre-line;
+    }
+
+    p {
+      @include appText();
+      line-height: 1.6rem;
+      width: 85%;
+    }
+
+    a {
+      width: 18.5rem;
+    }
+
+    img {
+      max-width: 11rem;
+      margin: 0 0 3rem 0;
+    }
+    .nd {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.mlr-15{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+
+#infosmcmv{
+  .container_app{
+    padding: 0!important;
+
+    #questionsMcmv{
+      margin: 0;
+    }
+  }
+}
+
+
+@media all and (max-width:767px){
+
+  #page-mcmv{
+    #bannermcmv{
+      .container_app {
+          align-items: initial;
+          justify-content: center;
+      }
+    }
+  }
+}
