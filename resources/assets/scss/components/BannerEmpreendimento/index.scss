@@ -1,0 +1,92 @@
+@import '../../utils/styleguide.scss';
+@import '../../utils/fonts.scss';
+@import '../../utils/cv-icons-font.scss';
+.BannerEmpreendimento {
+    img {
+        width: 100%;
+        max-width: 100%;
+        display: block;
+    }
+    .container_app {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    h1 {
+        margin: 0;
+        padding: 0;
+        color: white;
+        z-index: 2;
+        font-weight: bold;
+    }
+    .titleWrapper {
+        width: 50%;
+        h1 {
+            font-size: 4.7rem;
+            line-height: 1.15;
+        }
+    }
+    .action {
+        display: block;
+        background-color: rgba($color: $flat-blue, $alpha: 0.75);
+        padding: 2rem 3rem 2rem 3rem;
+        border-radius: 1.25rem;
+        z-index: 2;
+        h1 {
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.875rem;
+            margin-bottom: 0.5rem;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                list-style: none;
+                @include text-paragraph(#fff);
+                font-size: 1.25rem;
+                letter-spacing: 0.1px;
+                i {
+                    margin-right: 5px;
+                    &.cv-beds {
+                        margin-right: 5px + 10px;
+                    }
+                }
+            }
+        }
+        a {
+            text-align: center;
+            display: block;
+            padding: 1.25rem !important;
+            width: 85%;
+            max-width: 18.75rem;
+            margin: 2rem auto 0 auto;
+            font-size: 1.25rem;
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        .titleWrapper {
+            width: 100%;
+            margin-top: 3rem;
+            h2 {
+                font-size: 3.4rem;
+            }
+        }
+        .action {
+            margin-bottom: 3rem;
+            padding: 2rem 2rem 2rem 2rem;
+            width: 100%;
+            h1 {
+                font-size: 2rem;
+            }
+            ul {
+                li {
+                    font-size: 1.4rem;
+                    i {
+                        font-size: 1.35rem;
+                    }
+                }
+            }
+        }
+    }
+}

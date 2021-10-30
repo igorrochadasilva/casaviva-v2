@@ -1,19 +1,19 @@
 //tailwindcss
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 //utils
-@import "./utils/styleguide.scss";
+@import './utils/styleguide.scss';
 
 //Global Components
-@import "./components/Header/index.scss";
-@import "./components/MobileHeader/index.scss";
-@import "./components/Footer/index.scss";
+@import './components/Header/index.scss';
+@import './components/MobileHeader/index.scss';
+@import './components/Footer/index.scss';
 
 //Pages style
-@import "./pages/Simulador/index.scss";
-@import "./pages//MinhaCasaMinhaVida/index.scss";
+@import './pages/Simulador/index.scss';
+@import './pages//MinhaCasaMinhaVida/index.scss';
 
 //font
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700&display=swap');
@@ -21,5 +21,5 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Montserrat,sans-serif;
+  font-family: Montserrat, sans-serif;
 }

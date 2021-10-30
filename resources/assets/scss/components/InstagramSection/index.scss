@@ -1,0 +1,48 @@
+@import '../../utils/styleguide.scss';
+@import '../../utils/fonts.scss';
+@import '../../utils/cv-icons-font.scss';
+#instagramSec {
+    margin-bottom: 5.5rem;
+    h2 {
+        @include appTitle(2.5rem);
+    }
+    .item {
+        align-self: center;
+        justify-self: center;
+        margin: 20px;
+        box-shadow: 1px 1px 10px rgba(1, 1, 1, 0.1);
+        img {
+            @include img-fluid;
+            display: block;
+            min-width: 100%;
+        }
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .wrapButton {
+        margin-top: 3.85rem;
+        text-align: center;
+        a {
+            padding: 1.1rem 2.25rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #instagramSec {
+        h2 {
+            @include appTitle(1.75rem);
+        }
+        .el-row {
+            display: flex;
+            flex-wrap: wrap;
+            // justify-content: center;
+        }
+        .wrapButton a {
+            padding: 1.1rem 3.75rem !important;
+        }
+    }
+}

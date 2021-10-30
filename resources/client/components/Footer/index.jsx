@@ -1,5 +1,8 @@
 import React from 'react'
 
+import FloatCta from '../../components/FloatCta';
+import CookiesAlert from '../../components/CookiesAlert';
+
 const Footer = () => {
   return (
     <footer>
@@ -109,6 +112,9 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+
+      <FloatCta />
+      <CookiesAlert />
     </footer>
   )
 }
