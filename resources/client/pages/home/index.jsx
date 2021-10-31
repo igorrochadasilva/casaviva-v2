@@ -1,15 +1,16 @@
-import React from 'react';
+import React from 'react'
 
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
-import Carousel from '../../components/Carrossel';
-import DestaquesSection from '../../components/DestaquesSection';
-import SobreCasaViva from '../../components/SobreCasaViva';
-import InstagramSection from '../../components/InstagramSection';
-import FaleConosco from '../../components/FaleConosco';
-import Simular from '../../components/Simulador/index';
+//components
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
+import Carousel from '../../components/Carrossel'
+import DestaquesSection from '../../components/DestaquesSection'
+import SobreCasaViva from '../../components/SobreCasaViva'
+import InstagramSection from '../../components/InstagramSection'
+import FaleConosco from '../../components/FaleConosco'
+import Simular from '../../components/Simulador/index'
 
-import '../../../assets/scss/pages/Home/index.scss';
+import '../../../assets/scss/pages/Home/index.scss'
 
 const Home = () => {
   return (
@@ -22,7 +23,7 @@ const Home = () => {
 
       <Simular />
 
-      <SobreCasaViva /> 
+      <SobreCasaViva />
 
       <InstagramSection />
 
