@@ -1,0 +1,73 @@
+@import '../../utils/styleguide.scss';
+@import '../../utils/fonts.scss';
+@import '../../utils/cv-icons-font.scss';
+#page-sustentabilidade {
+    #sustentabilidade {
+        padding: 4rem;
+        background-color: #fff;
+        .el-row {
+            display: flex;
+        }
+        .content {
+            h1 {
+                font-size: 2.5rem;
+                color: #cf0025;
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+            p {
+                max-width: 80%;
+                font-size: 1.2rem;
+                color: #111;
+            }
+        }
+        img {
+            margin-bottom: -0.3rem;
+        }
+        .list {
+            max-width: 80%;
+            ul {
+                margin: 0;
+                padding: 0;
+                margin-top: 2rem;
+                .icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    img {
+                        margin: 0;
+                        max-width: 64px;
+                    }
+                }
+                li {
+                    list-style-type: none;
+                    margin-bottom: 4rem;
+                }
+            }
+            h5 {
+                color: $flat-blue;
+                font-size: 1.1rem;
+                font-weight: bold;
+            }
+            p {
+                color: #111;
+                margin-top: 0.2rem;
+                small {
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #page-sustentabilidade {
+        #sustentabilidade {
+            padding: 2rem;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
