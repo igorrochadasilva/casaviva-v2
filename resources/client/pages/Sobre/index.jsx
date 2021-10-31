@@ -3,6 +3,7 @@ import React from 'react'
 //pages
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import FaleConosco from '../../components/FaleConosco'
 
 const Sobre = () => {
   return (
@@ -105,7 +106,7 @@ const Sobre = () => {
           </div>
         </section>
         {/* SEÇÃO NOSSO TIME */}
-        {/* SEÇÃO FALE CONOSCO */}
+        <FaleConosco />
       </div>
       <Footer />
     </div>

@@ -1,5 +1,5 @@
-import React from 'react';
-import '../../../assets/scss/components/FaleConosco/index.scss';
+import React from 'react'
+import '../../../assets/scss/components/FaleConosco/index.scss'
 
 
 const FaleConosco = () => {

@@ -1,11 +1,11 @@
-import React from 'react';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+import React from 'react'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+import Slider from 'react-slick'
 
-import '../../../assets/scss/components/Carrossel/index.scss';
-import BannerEmpreendimento from '../../components/BannerEmpreendimento';
-import BannerInstitucional from '../../components/BannerInstitucional';
+import '../../../assets/scss/components/Carrossel/index.scss'
+import BannerEmpreendimento from '../../components/BannerEmpreendimento'
+import BannerInstitucional from '../../components/BannerInstitucional'
 
 const Carousel = () => {
   const settings = {
@@ -18,7 +18,7 @@ const Carousel = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000
+    autoplaySpeed: 5000,
   }
 
   return (
