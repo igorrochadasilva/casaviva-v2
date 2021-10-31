@@ -1,0 +1,195 @@
+@import '../../utils/styleguide.scss';
+@import '../../utils/fonts.scss';
+@import '../../utils/cv-icons-font.scss';
+.destaquesSection {
+    padding-bottom: 4.8rem;
+    overflow-x: hidden;
+    @media only screen and (max-width: 767px) {
+        margin-top: 4em;
+    }
+    .container_app {
+        flex-direction: column;
+    }
+    h2 {
+        @include appTitle(2.5rem);
+        width: 100%;
+    }
+    .el-row {
+        .el-col {
+            margin-bottom: 1rem;
+            &:nth-child(odd) {
+                .item:before {
+                    background-color: rgba($color: $cherry, $alpha: 0.5);
+                }
+            }
+            &:nth-child(even) {
+                .item:before {
+                    background-color: rgba($color: $qs-blue, $alpha: 0.5);
+                }
+            }
+        }
+    }
+    .item {
+        overflow: hidden;
+        position: relative;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &:before {
+            content: '';
+            z-index: 1;
+            position: absolute;
+            left: -90%;
+            top: 0;
+            height: 100%;
+            width: 70%;
+            mix-blend-mode: multiply;
+            transform: skewX(-28deg);
+            transition: 0.3s left ease-in-out;
+        }
+        &:hover,
+        &:active {
+            &:before {
+                left: -22%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .destaquesSection {
+        h2 {
+            @include appTitle(1.75rem);
+            margin-left: 1.75rem;
+        }
+        .container_app {
+            padding: 0 !important;
+        }
+        .item {
+            &:before {
+                left: -105%;
+                width: 80%;
+            }
+            &:hover,
+            &:active {
+                &:before {
+                    left: -25%;
+                }
+            }
+        }
+    }
+}
+
+.destaquesSection {
+    .slick-list {
+        overflow-x: hidden;
+        margin: 0 -0.7rem !important;
+    }
+    .slick-slide {
+        &:nth-child(odd) {
+            .item:before {
+                background-color: rgba($color: $cherry, $alpha: 0.5);
+            }
+        }
+        &:nth-child(even) {
+            .item:before {
+                background-color: rgba($color: $qs-blue, $alpha: 0.5);
+            }
+        }
+    }
+    .slick-slide>div {
+        padding: 0 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .destaquesSection {
+        .slick-list {
+            overflow-x: hidden;
+            margin: 0;
+        }
+        .slick-slide>div {
+            padding: 0;
+        }
+    }
+}
+
+//DIVISÃO
+.boxEmpreendimento {
+    * {
+        color: #fff;
+    }
+    img {
+        @include img-fluid;
+        display: block;
+        min-width: 100%;
+    }
+    a {
+        position: relative;
+        cursor: pointer;
+        display: block;
+        width: 100%;
+        height: 100%;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            mix-blend-mode: multiply;
+            background: rgb(255, 255, 255);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(0, 0, 0, 1) 100%);
+        }
+    }
+    h3 {
+        @include appTitle(1rem);
+    }
+    .content {
+        position: absolute;
+        bottom: 3.5rem;
+        left: 3.5rem;
+        z-index: 3;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            display: flex;
+            align-items: center;
+            @include appText;
+            margin-bottom: 0.4rem;
+            word-break: break-all;
+            padding-right: 2rem;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            span {
+                display: inline-block;
+                margin-left: 0.7rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .boxEmpreendimento {
+        .content {
+            left: 2.75rem;
+            bottom: 4rem;
+        }
+        h3 {
+            font-size: 2rem;
+        }
+        ul {
+            li {
+                font-size: 1.4rem;
+                i {
+                    font-size: 1.35rem;
+                }
+            }
+        }
+    }
+}

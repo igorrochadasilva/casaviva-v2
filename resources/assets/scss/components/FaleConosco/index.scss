@@ -1,0 +1,76 @@
+@import '../../utils/styleguide.scss';
+@import '../../utils/fonts.scss';
+@import '../../utils/cv-icons-font.scss';
+#faleConoscoSec {
+    background-color: $qs-blue;
+    padding: 5.5rem 0;
+    color: #fff;
+    .el-col {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h3 {
+        @include appTitle(2rem);
+    }
+    p {
+        @include appText();
+        font-size: 1.1rem;
+    }
+    .btn-primary-white {
+        width: 63%;
+        display: block;
+        text-align: center;
+        margin-top: 3rem;
+        color: $qs-blue;
+        font-size: 1.1rem;
+        padding: 1.1rem;
+        &:hover,
+        &:active {
+            border-color: $success-green;
+            background-color: $success-green;
+            color: #fff;
+            &:after {
+                right: -2.5rem;
+                color: #fff;
+            }
+        }
+        &:after {
+            font-size: 1.5rem;
+            font-family: element-icons !important;
+            font-style: normal;
+            line-height: 1;
+            vertical-align: baseline;
+            position: relative;
+            right: -1rem;
+            top: 0.188rem;
+            content: '\e6dc';
+            color: $qs-blue;
+            transition: 0.3s ease-in all;
+        }
+    }
+    img {
+        max-width: 14rem;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #faleConoscoSec {
+        padding: 4rem 0;
+        .el-row {
+            flex-wrap: wrap;
+        }
+        .st {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 4rem;
+        }
+        img {
+            max-width: 11rem !important;
+        }
+        .btn-primary-white {
+            width: 100%;
+        }
+    }
+}

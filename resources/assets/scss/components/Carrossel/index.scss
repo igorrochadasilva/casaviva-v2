@@ -1,0 +1,32 @@
+@import '../../utils/styleguide.scss';
+@import '../../utils/fonts.scss';
+@import '../../utils/cv-icons-font.scss';
+
+.item {
+  position: relative;
+}
+
+#section-carousel {
+  .slick-slider {
+    margin-bottom: 2.4rem;
+    &.multiple {
+      margin-bottom: 4.8rem;
+    }
+  }
+  .slick-list {
+    margin: 0;
+  }
+  .slick-slide > div {
+    padding: 0;
+  }
+
+  .crslDots {
+    bottom: -3rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container_app {
+    flex-direction: column;
+  }
+}
