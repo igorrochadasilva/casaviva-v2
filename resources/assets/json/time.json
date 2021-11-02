@@ -1,0 +1,52 @@
+
+
+  {
+  "equipe":
+    [
+      {
+        "name": "Marcos Cunha – Engenharia",
+        "avatar": "https://qa-cv-cdn.adjektiv.com.br/public/eduardo_leite.jpg",
+        "description": "O foco da nossa obra é tornar fisicamente fiel nossos empreendimentos, com excelência na qualidade e nos prazos, excedendo às expectativas dos nossos clientes."
+      },
+      {
+        "name": "Carla Gallucci - Incorporação",
+        "avatar": "https://qa-cv-cdn.adjektiv.com.br/public/eduardo_leite.jpg",
+        "description": "'Localização privilegiada, com fácil acesso ao transporte público e mobilidade, em um condomínio com lazer completo, pensado em cada detalhe para o dia a dia do morador. É assim que nos propomos a fazer cada empreendimento da CasaViva, com qualidade, inteligência e economia, unidos para entregar sempre o melhor e realizar sonhos.'"
+      },
+      {
+        "name": "Pâmela Carvalho – Relacionamento com Cliente",
+        "avatar": "https://qa-cv-cdn.adjektiv.com.br/public/eduardo_leite.jpg",
+        "description": "'Um dos principais diferenciais da CasaViva é trazer o cliente pra perto e fazê-lo se sentir em casa. Entendemos que a realização de um grande sonho também depende de nós e que cada cliente é único e estamos sempre prontos para ouvi-los e garantir sua satisfação. Nosso desafio não é apenas vender e sim conquistar o cliente.'"
+      },
+      {
+        "name": "Rayssa Bonifácio – Administrativo",
+        "avatar": "https://qa-cv-cdn.adjektiv.com.br/public/eduardo_leite.jpg",
+        "description": "'Administrar as rotinas de escritório e garantir o bom funcionamento dos processos faz parte de uma empresa que visa impreterivelmente a satisfação do cliente em todas as áreas, do começo ao fim.'"
+      },
+      {
+        "name": "Paulo Mendes – Financeiro",
+        "avatar": "https://qa-cv-cdn.adjektiv.com.br/public/eduardo_leite.jpg",
+        "description": "'Uma jornada de mil quilômetros precisa começar com um simples passo. Nós do financeiro estamos aqui para ajudar vc a dar este passo inicial.'"
+      },
+      {
+        "name": "Sung A No – Engenharia",
+        "avatar": "https://qa-cv-cdn.adjektiv.com.br/public/eduardo_leite.jpg",
+        "description": "'Mais que um projeto, cuidamos da concepção e desenvolvimento do seu sonho para transformá-lo na sua casa própria.'"
+      },
+      {
+        "name": "Aline Perez – Engenharia",
+        "avatar": "https://qa-cv-cdn.adjektiv.com.br/public/eduardo_leite.jpg",
+        "description": "'Sabemos da importância da conquista da casa própria, e participar da construção de cada etapa desse sonho nos faz sentir parte dele! Somos integrantes da equipe de engenharia, a grande responsável pela execução dos empreendimentos da CasaViva. Nossa missão é planejar e acompanhar o dia-a-dia das obras, para que tudo seja entregue conforme o esperado.'"
+      },
+      {
+        "name": "Aline Martins – Marketing",
+        "avatar": "https://qa-cv-cdn.adjektiv.com.br/public/eduardo_leite.jpg",
+        "description": "'Mais do que comunicar os produtos desenvolvidos especialmente para nossos clientes, nosso trabalho é mostrar que as pessoas conseguem realizar o sonho do seu primeiro imóvel com a qualidade, segurança e lazer que merecem. Afinal, estamos falando de uma das conquistas mais importantes da vida: a casa própria.'"
+      },
+      {
+        "name": "Adrian Flechtman – Novos Negócios",
+        "avatar": "https://qa-cv-cdn.adjektiv.com.br/public/eduardo_leite.jpg",
+        "description": "'O sonho só se realiza de fato, quando achamos o melhor lugar para construir o melhor produto. É aqui onde a dedicação para o cliente começa. Tem que ser em uma região em que atenda todas as necessidades do dia a dia, com mobilidade, serviços, lazer. Nosso trabalho é achar onde esse sonho se iniciará. O desejo de onde morar se torna realidade.'"
+      }
+    ]
+}
