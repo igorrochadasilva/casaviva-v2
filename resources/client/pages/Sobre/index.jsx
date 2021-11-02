@@ -5,6 +5,12 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import FaleConosco from '../../components/FaleConosco'
 
+//components
+import NossoTime from './components/NossoTime'
+
+//json
+import time from './../../../assets/json/time.json'
+
 const Sobre = () => {
   return (
     <div>
@@ -72,32 +78,36 @@ const Sobre = () => {
                 <div className="el-row mg-rl-n25">
                   <div className="item el-col el-col-24 el-col-xs-12 el-col-sm-6 pd-lr-25">
                     <table>
-                      <tr>
-                        <td>
-                          <i className="cv-icons cv-handsmoney"></i>
-                        </td>
-                        <td>
-                          <h4>
-                            Unidades
-                            <br />
-                            lançadas
-                          </h4>
-                          <p>269 unidades</p>
-                        </td>
-                      </tr>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <i className="cv-icons cv-handsmoney"></i>
+                          </td>
+                          <td>
+                            <h4>
+                              Unidades
+                              <br />
+                              lançadas
+                            </h4>
+                            <p>269 unidades</p>
+                          </td>
+                        </tr>
+                      </tbody>
                     </table>
                   </div>
                   <div className="item el-col el-col-24 el-col-xs-12 el-col-sm-6 pd-lr-25">
                     <table>
-                      <tr>
-                        <td>
-                          <i className="cv-icons cv-percentage"></i>
-                        </td>
-                        <td>
-                          <h4>Unidades em desenvolvimento</h4>
-                          <p>4.535 unidades</p>
-                        </td>
-                      </tr>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <i className="cv-icons cv-percentage"></i>
+                          </td>
+                          <td>
+                            <h4>Unidades em desenvolvimento</h4>
+                            <p>4.535 unidades</p>
+                          </td>
+                        </tr>
+                      </tbody>
                     </table>
                   </div>
                 </div>
@@ -105,7 +115,7 @@ const Sobre = () => {
             </div>
           </div>
         </section>
-        {/* SEÇÃO NOSSO TIME */}
+        <NossoTime time={time} />
         <FaleConosco />
       </div>
       <Footer />

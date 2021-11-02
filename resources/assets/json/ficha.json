@@ -1,0 +1,243 @@
+{
+  "_id": {
+      "$oid": "60d40287be44e3bd236c8ead"
+  },
+  "key": "lyne-pirituba",
+  "title": "Lyne Pirituba",
+  "is_featured": true,
+  "order": {
+      "$numberInt": "1"
+  },
+  "category_slug": "lancamentos",
+  "thumbnail_desk": "https://i.imgur.com/VdJN0U8.png",
+  "thumbnail_mobile": "https://i.imgur.com/Fq0le8R.png",
+  "thumbnail_alt": "Imagem do empreendimento CasaViva Pirituba - Uma piscina",
+  "short_description": [{
+      "icon_slug": "cv-beds",
+      "value": "2 dorms com ou sem varanda"
+  }, {
+      "icon_slug": "cv-location-mark",
+      "value": "Em frente a estação Pirituba"
+  }],
+  "media": [{
+      "thumb": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/lyne_fachada.jpg",
+      "src": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/lyne_fachada.jpg",
+      "caption": "Fachada",
+      "alt": "Fachada",
+      "preview": true,
+      "type": "vertical"
+  }, {
+      "thumb": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/lyne_flex.jpg",
+      "src": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/lyne_flex.jpg",
+      "caption": "Espaço Flex",
+      "alt": "Espaço Flex",
+      "preview": true,
+      "type": "horizontal"
+  }, {
+      "thumb": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/lyne_festas.jpg",
+      "src": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/lyne_festas.jpg",
+      "caption": "Salão de Festas",
+      "alt": "Salão de Festas",
+      "preview": true,
+      "type": "horizontal"
+  }, {
+      "thumb": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/lyne_piscina.jpg",
+      "src": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/lyne_piscina.jpg",
+      "caption": "Piscina",
+      "alt": "Piscina",
+      "preview": false,
+      "type": "horizontal"
+  }, {
+      "thumb": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/lyne_lavanderia.jpg",
+      "src": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/lyne_lavanderia.jpg",
+      "caption": "Lavanderia",
+      "alt": "Lavanderia",
+      "preview": false,
+      "type": "horizontal"
+  }, {
+      "thumb": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/lyne_churrasqueira.jpg",
+      "src": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/lyne_churrasqueira.jpg",
+      "caption": "Churrasqueira",
+      "alt": "Churrasqueira",
+      "preview": false,
+      "type": "horizontal"
+  }, {
+      "thumb": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/lyne_brinquedoteca.jpg",
+      "src": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/lyne_brinquedoteca.jpg",
+      "caption": "Brinquedoteca",
+      "alt": "Brinquedoteca",
+      "preview": false,
+      "type": "horizontal"
+  },
+{
+          "thumb": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/decorado/decorado-1.jpg",
+          "src": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/decorado/decorado-1.jpg",
+          "caption": "Foto decorado 1",
+          "alt": "Foto decorado 1",
+          "preview": false,
+          "type": "vertical",
+          "decorado": true
+        },
+        {
+          "thumb": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/decorado/decorado-2.jpg",
+          "src": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/decorado/decorado-2.jpg",
+          "caption": "Foto decorado 2",
+          "alt": "Foto decorado 2",
+          "preview": false,
+          "type": "vertical",
+          "decorado": true
+        },
+        {
+          "thumb": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/decorado/decorado-3.jpg",
+          "src": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/decorado/decorado-3.jpg",
+          "caption": "Foto decorado 3",
+          "alt": "Foto decorado 3",
+          "preview": false,
+          "type": "vertical",
+          "decorado": true
+        },
+        {
+          "thumb": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/decorado/decorado-4.jpg",
+          "src": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/decorado/decorado-4.jpg",
+          "caption": "Foto decorado 4",
+          "alt": "Foto decorado 4",
+          "preview": false,
+          "type": "vertical",
+          "decorado": true
+        },
+        {
+          "thumb": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/decorado/decorado-5.jpg",
+          "src": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/decorado/decorado-5.jpg",
+          "caption": "Foto decorado 5",
+          "alt": "Foto decorado 5",
+          "preview": false,
+          "type": "vertical",
+          "decorado": true
+        },
+        {
+          "thumb": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/localizacao/foto-aerea.jpg",
+          "src": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/localizacao/foto-aerea.jpg",
+          "caption": "Foto aérea do local",
+          "alt": "Foto aérea do local",
+          "preview": false,
+          "type": "vertical",
+          "localizacao": true
+        },
+        {
+          "thumb": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/localizacao/localizacao-1.jpg",
+          "src": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/localizacao/localizacao-1.jpg",
+          "caption": "Hospital Le Forte",
+          "alt": "Hospital Le Forte",
+          "preview": false,
+          "type": "vertical",
+          "localizacao": true
+        },
+        {
+          "thumb": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/localizacao/localizacao-2.jpg",
+          "src": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/localizacao/localizacao-2.jpg",
+          "caption": "Agência Bancária",
+          "alt": "Agência Bancária",
+          "preview": false,
+          "type": "vertical",
+          "localizacao": true
+        },
+        {
+          "thumb": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/localizacao/localizacao-3.jpg",
+          "src": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/localizacao/localizacao-3.jpg",
+          "caption": "Escola",
+          "alt": "Escola",
+          "preview": false,
+          "type": "vertical",
+          "localizacao": true
+        },
+        {
+          "thumb": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/localizacao/localizacao-4.jpg",
+          "src": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/localizacao/localizacao-4.jpg",
+          "caption": "Agência Bancária",
+          "alt": "Agência Bancária",
+          "preview": false,
+          "type": "vertical",
+          "localizacao": true
+        },
+        {
+          "thumb": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/localizacao/localizacao-5.jpg",
+          "src": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/localizacao/localizacao-5.jpg",
+          "caption": "Supermercado",
+          "alt": "Supermercado",
+          "preview": false,
+          "type": "vertical",
+          "localizacao": true
+        },
+        {
+          "thumb": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/localizacao/localizacao-6.jpg",
+          "src": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/localizacao/localizacao-6.jpg",
+          "caption": "Shopping",
+          "alt": "Shopping",
+          "preview": false,
+          "type": "vertical",
+          "localizacao": true
+        }],
+  "description": {
+      "name": "Lyne Pirituba",
+      "text": "E se tudo o que a gente valoriza pudesse estar conectado e ao nosso alcance? Essa é a proposta do Lyne. Um empreendimento cercado por todas as vantagens da região e com um benefício especial: localizado em frente à estação Pirituba. Ou seja, você pode trabalhar, passear e aproveitar tudo o que quer de uma forma prática e segura. Conheça o Lyne. Felicidade para viver Pirituba. Mobilidade para viver São Paulo. L Y N E  PIRITUBA. CONEXÃO COM A SUA VIDA.",
+      "image": "https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/logo-lyne.png",
+      "alt": "Logo Empreendimento",
+      "specs": [{
+          "icon_slug": "spec-quarto",
+          "key": "dorms",
+          "title": "Dormitórios",
+          "value": "1 ou 2"
+      }, {
+          "icon_slug": "spec-banheiro",
+          "key": "banheiros",
+          "title": "Banheiros",
+          "value": "1"
+      }, {
+          "icon_slug": "spec-torre",
+          "key": "torres",
+          "title": "Torres",
+          "value": "2"
+      }, {
+          "icon_slug": "spec-carro",
+          "key": "vagas",
+          "title": "Vagas",
+          "value": "0 ou 1"
+      }]
+  },
+  "blueprints": [{
+      "key": "planta_1",
+      "title": "2 Quartos",
+      "content": "https://qa-cv-cdn.adjektiv.com.br/public/planta_1.jpg",
+      "alt": "Planta do apartamento na versão 2 quartos"
+  }],
+  "features": [{
+      "key": "estrutura",
+      "title": "Estrutura",
+      "icon_slug": "cv-vase",
+      "content": "Áreas comuns equipadas e decoradas."
+  }, {
+      "key": "mobilidade",
+      "title": "Mobilidade",
+      "icon_slug": "cv-bike",
+      "content": "A 50m do Terminal Pirituba"
+  }],
+  "tour": {
+      "title": "Tour CasaVivaMorumbi",
+      "content": "https://casavivamorumbi.com.br/tour/morumbi/tour.html"
+  },
+  "map": {
+      "title": "Localização do Empreendimento",
+      "content": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7310.586730452292!2d-46.74640401063118!3d-23.62966269999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce51514a1ef1e1%3A0xee8b2fa4dfccd5f9!2sExto%20Empreendimentos!5e0!3m2!1spt-BR!2sbr!4v1590398290545!5m2!1spt-BR!2sbr",
+      "extra_content": "Conheça o Lyne. Felicidade para viver Pirituba. Mobilidade para viver São Paulo."
+  },
+  "addresses": [{
+      "key": "stand",
+      "title": "Stand de vendas",
+      "content": "Shopping Butantã, loja 190 – Ao lado da Renner Av. Prof. Francisco Morato, 2718",
+      "extra_content": "Conheça o Lyne. Felicidade para viver Pirituba. Mobilidade para viver São Paulo."
+  }, {
+      "key": "empreendimento",
+      "title": "Empreendimento",
+      "content": "Av Eliseu de Almeida, 1477"
+  }]
+}
