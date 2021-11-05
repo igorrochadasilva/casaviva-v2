@@ -24,13 +24,13 @@ const Carousel = () => {
   return (
     <section id="section-carousel">
       <Slider {...settings}>
-        <div tabindex="-1" class="item" data-v-e4caeaf8="" data-v-fd5dd3e0="">
+        <div tabindex="-1" className="item" data-v-e4caeaf8="" data-v-fd5dd3e0="">
           <BannerEmpreendimento />
         </div>
-        <div tabindex="-1" class="item" data-v-e4caeaf8="" data-v-fd5dd3e0="">
+        <div tabindex="-1" className="item" data-v-e4caeaf8="" data-v-fd5dd3e0="">
           <BannerEmpreendimento />
         </div>
-        <div tabindex="-1" class="item" data-v-e4caeaf8="" data-v-fd5dd3e0="">
+        <div tabindex="-1" className="item" data-v-e4caeaf8="" data-v-fd5dd3e0="">
           <BannerInstitucional />
         </div>
       </Slider>

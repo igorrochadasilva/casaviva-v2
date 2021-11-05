@@ -57,10 +57,10 @@ Encore.addEntry('app', './resources/js/app.js')
 | we must copy them manually.
 |
 */
-// Encore.copyFiles({
-//   from: './resources/images',
-//   to: 'images/[path][name].[hash:8].[ext]',
-// })
+Encore.copyFiles({
+  from: './resources/assets/fonts',
+  to: 'fonts/[path][name].[hash:8].[ext]',
+})
 
 /*
 |--------------------------------------------------------------------------
@@ -197,6 +197,21 @@ Encore.configureDevServerOptions((options) => {
 | the level to "info".
 |
 */
+
+Encore.addLoader({
+  test: /\.(woff|woff2|eot|ttf|otf)$/,
+  use: [
+    {
+      loader: 'file-loader',
+      options: {
+        outputPath: 'assets/fonts',
+      },
+    },
+  ],
+}).configureFontRule({
+  filename: 'fonts/[name].[hash:8].[ext]',
+})
+
 const config = Encore.getWebpackConfig()
 config.infrastructureLogging = {
   level: 'warn',

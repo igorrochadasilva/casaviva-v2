@@ -1,4 +1,21 @@
 {
   "assets/app.css": "http://localhost:8080/assets/app.css",
-  "assets/app.js": "http://localhost:8080/assets/app.js"
+  "assets/app.js": "http://localhost:8080/assets/app.js",
+  "assets/fonts/element-icons.4520188.ttf": "http://localhost:8080/assets/fonts/element-icons.4520188.45201881.ttf",
+  "assets/fonts/element-icons.woff": "http://localhost:8080/assets/fonts/element-icons.313f7dac.woff",
+  "assets/fonts/fontello.svg": "http://localhost:8080/assets/fonts/fontello.66aedbb3.svg",
+  "assets/fonts/cv-icons.eot": "http://localhost:8080/assets/fonts/cv-icons.5e621a06.eot",
+  "assets/fonts/cv-icons.ttf": "http://localhost:8080/assets/fonts/cv-icons.c3879bf5.ttf",
+  "assets/fonts/cv-icons.svg": "http://localhost:8080/assets/fonts/cv-icons.06b4fa54.svg",
+  "assets/fonts/specs.eot": "http://localhost:8080/assets/fonts/specs.e754160f.eot",
+  "assets/fonts/specs.ttf": "http://localhost:8080/assets/fonts/specs.d758194f.ttf",
+  "assets/fonts/fontello.eot": "http://localhost:8080/assets/fonts/fontello.df201ae2.eot",
+  "assets/fonts/cv-icons.woff": "http://localhost:8080/assets/fonts/cv-icons.13784fa6.woff",
+  "assets/fonts/fontello.ttf": "http://localhost:8080/assets/fonts/fontello.76a63aa6.ttf",
+  "assets/fonts/cv-icons.woff2": "http://localhost:8080/assets/fonts/cv-icons.e750409d.woff2",
+  "assets/fonts/specs.svg": "http://localhost:8080/assets/fonts/specs.c69051ea.svg",
+  "assets/fonts/fontello.woff": "http://localhost:8080/assets/fonts/fontello.805af163.woff",
+  "assets/fonts/specs.woff": "http://localhost:8080/assets/fonts/specs.d8f4c508.woff",
+  "assets/fonts/fontello.woff2": "http://localhost:8080/assets/fonts/fontello.21fb0502.woff2",
+  "assets/fonts/specs.woff2": "http://localhost:8080/assets/fonts/specs.d812e356.woff2"
 }
