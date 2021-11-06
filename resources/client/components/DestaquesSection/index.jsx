@@ -1,14 +1,12 @@
 import React from 'react'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import '../../../assets/scss/components/DestaquesSection/index.scss';
 
 const DestaquesSection = (props) => {
-    var settingsSlick = {
+    const carouselSettings = {
         arrows: false,
         dots: true,
-        dotsclassName: 'slick-dots crslDots',
+        dotsClass: 'slick-dots crslDots',
         edgeFriction: 0.35,
         infinite: false,
         speed: 500,
@@ -19,17 +17,16 @@ const DestaquesSection = (props) => {
                 breakpoint: 767,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
                 }
             }
         ]
-    }
+    };
 
     return (
         <section className="destaquesSection">
             <div className="container_app">
                 <h2>{props.sectionTitle}</h2>
-                <Slider {...settingsSlick}>
+                <Slider {...carouselSettings}>
                     <div className="item">
                         <div type-box="home" className="boxEmpreendimento">
                             <a href="/ficha/casaviva-morumbi" className="">
