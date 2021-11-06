@@ -1,0 +1,47 @@
+@import '../../utils/styleguide.scss';
+@import '../../utils/fonts.scss';
+@import '../../utils/cv-icons-font.scss';
+#page-politica-de-privacidade {
+    padding: 3rem 0 2rem 0;
+    h1 {
+        @include appTitle(3rem);
+    }
+    p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .container_app {
+        display: block;
+    }
+    .item {
+        margin-bottom: 3rem;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        li {
+            @include appText;
+            position: relative;
+            text-indent: 0.5rem;
+            line-height: 1.48;
+            &:before {
+                font-size: 0.8rem;
+                font-family: element-icons !important;
+                font-style: normal;
+                line-height: 1;
+                vertical-align: baseline;
+                position: relative;
+                left: -0.5rem;
+                top: -0.08rem;
+                content: '\e6dc';
+                color: $black_two;
+                transition: 0.3s ease-in all;
+                font-weight: bold;
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
