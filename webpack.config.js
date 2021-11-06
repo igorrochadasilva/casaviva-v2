@@ -198,20 +198,6 @@ Encore.configureDevServerOptions((options) => {
 |
 */
 
-Encore.addLoader({
-  test: /\.(woff|woff2|eot|ttf|otf)$/,
-  use: [
-    {
-      loader: 'file-loader',
-      options: {
-        outputPath: 'assets/fonts',
-      },
-    },
-  ],
-}).configureFontRule({
-  filename: 'fonts/[name].[hash:8].[ext]',
-})
-
 const config = Encore.getWebpackConfig()
 config.infrastructureLogging = {
   level: 'warn',
