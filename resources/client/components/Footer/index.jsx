@@ -1,7 +1,7 @@
 import React from 'react'
 
-import FloatCta from '../../components/FloatCta';
-import CookiesAlert from '../../components/CookiesAlert';
+import FloatCta from '../../components/FloatCta'
+import CookiesAlert from '../../components/CookiesAlert'
 
 const Footer = () => {
   return (
