@@ -2,6 +2,10 @@
 @import '../../utils/fonts.scss';
 @import '../../utils/cv-icons-font.scss';
 
+.show {
+  display: block !important;
+}
+
 .container_app {
   display: block;
 }
@@ -779,11 +783,5 @@
   .slick-track {
     display: flex;
     align-items: center;
-  }
-}
-
-.ReactModalPortal {
-  .ReactModal__Overlay {
-    display: none;
   }
 }

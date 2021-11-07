@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import Slider from 'react-slick'
 import Lightbox from 'react-image-lightbox'
 import 'react-image-lightbox/style.css'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
 
 import '../../../assets/scss/pages/Ficha/index.scss';
 
@@ -12,27 +10,24 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Simular from '../../components/Simulador/index'
 import McmvSection from '../../components/McmvSection/index'
-import LightBox from '../../components/LightBox'
 
 
 const Ficha = ({ match }) => {
+
     const idPage = match.params.id;
 
     const images = [
-        '//placekitten.com/1500/500',
-        '//placekitten.com/4000/3000',
-        '//placekitten.com/800/1200',
-        '//placekitten.com/1500/1500',
+        'https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/fachada.png',
+        'https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/salao_de_festasx.png',
+        'https://i.imgur.com/hlrFa7I.jpg',
+        'https://i.imgur.com/gjxrL36.jpg',
+        'https://i.imgur.com/XdAwI76.jpg',
     ];
 
-    const [settings, setSettings] = useState({
+    const [set, setSettings] = useState({
         photoIndex: 0,
         isOpen: false,
     });
-
-    const clickShow = () => {
-        console.log("AAAAAAAAAAAAAA")
-    }
 
     const slickOptionsGalery = {
         arrows: false,
@@ -83,8 +78,8 @@ const Ficha = ({ match }) => {
                             alt="Academia"
                         />
                     </div>
-                    <div className="wrapButton">
-                        <a className="btn btn-primary-white" onClick={() => { setSettings({ isOpen: true, photoIndex: 1 }), clickShow() }}>
+                    <div className="wrapButton" onClick={() => setSettings({ isOpen: true, photoIndex: 0 })}>
+                        <a className="btn btn-primary-white" >
                             Ver Todas Fotos
                         </a>
                     </div>
@@ -610,28 +605,30 @@ const Ficha = ({ match }) => {
                 </section>
                 <McmvSection />
                 <Simular />
-
-                <LightBox />
-
             </div>
-
-            <Lightbox
-                mainSrc={images[settings.photoIndex]}
-                nextSrc={images[(settings.photoIndex + 1) % images.length]}
-                prevSrc={images[(settings.photoIndex + images.length - 1) % images.length]}
-                onCloseRequest={() => setSettings({ isOpen: false, photoIndex: 1 })}
-                onMovePrevRequest={() =>
-                    setSettings({
-                        photoIndex: (settings.photoIndex + images.length - 1) % images.length,
-                    })
-                }
-                onMoveNextRequest={() =>
-                    setSettings({
-                        photoIndex: (settings.photoIndex + 1) % images.length,
-                    })
-                }
-            />
             <Footer />
+
+
+            {set.isOpen && (
+                <Lightbox
+                    mainSrc={images[set.photoIndex]}
+                    nextSrc={images[(set.photoIndex + 1) % images.length]}
+                    prevSrc={images[(set.photoIndex + images.length - 1) % images.length]}
+                    onCloseRequest={() => setSettings({ isOpen: false })}
+                    onMovePrevRequest={() =>
+                        setSettings({
+                            photoIndex: (set.photoIndex + images.length - 1) % images.length,
+                            isOpen: true
+                        })
+                    }
+                    onMoveNextRequest={() =>
+                        setSettings({
+                            photoIndex: (set.photoIndex + 1) % images.length,
+                            isOpen: true
+                        })
+                    }
+                />
+            )}
         </div>
     )
 }

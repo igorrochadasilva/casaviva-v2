@@ -13,6 +13,7 @@ import Politicas from './pages/PoliticaPrivacidade'
 import NotFound from './pages/404'
 import Ficha from './pages/Ficha'
 import LightBox from './components/LightBox'
+import nossosProdutos from './pages/NossosProdutos'
 
 
 
@@ -32,6 +33,7 @@ export default function App() {
         <Route component={Termos} path="/termos-e-condicoes" />
         <Route component={Politicas} path="/politica-de-privacidade" />
         <Route component={LightBox} path="/lightbox" />
+        <Route component={nossosProdutos} path="/nossos-produtos" />
         <Route component={NotFound} />
       </Switch>
     </Router>

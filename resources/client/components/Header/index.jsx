@@ -27,7 +27,7 @@ const Header = () => {
             <div className="header-menu">
               <ul>
                 <li className="link in menu.links">
-                  <a href="/">Nossos produtos</a>
+                  <a href="/nossos-produtos">Nossos produtos</a>
                 </li>
                 <li className="link in menu.links">
                   <a href="/">Casa Verde e Amarela</a>
