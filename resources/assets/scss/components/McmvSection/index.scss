@@ -1,0 +1,127 @@
+@import '../../utils/styleguide.scss';
+@import '../../utils/fonts.scss';
+@import '../../utils/cv-icons-font.scss';
+
+@media only screen and (max-width: 767px) {
+    #mcmvSection {
+        .el-row {
+            flex-wrap: wrap;
+            // padding: 2rem 0 4.5rem 0;
+        }
+
+        img {
+            margin: 2.5rem auto 0.75rem auto !important;
+            width: 14rem;
+        }
+
+        &.empPage {
+            .nd {
+                margin-top: 4rem;
+            }
+
+            img {
+                margin: 0 auto 2.5rem auto !important;
+            }
+        }
+
+        .items-doc {
+            div {
+                width: 100%;
+            }
+
+            h5 {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+#mcmvSection {
+    padding: 4.5rem 0 0 0;
+
+    .items-doc {
+        margin-top: 2rem;
+
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: 0 -0.5rem;
+        }
+
+        h5 {
+            margin: 0 0.5rem 1rem 0.5rem;
+            display: flex;
+            align-items: center;
+            background-color: $flat-blue;
+            border-radius: 1.875rem;
+            padding: 0 2rem;
+            height: 3rem;
+            color: $white;
+        }
+
+        ul {
+            margin: 2rem 0 !important;
+        }
+    }
+
+    .sectionSeparator {
+        display: flex;
+        justify-content: center;
+
+        hr {
+            border-top: 1px solid rgba($color: $black-two, $alpha: 0.1);
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 4.5rem;
+        }
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: 5rem;
+        max-width: 11rem;
+    }
+
+    h3 {
+        @include appTitle(1.75rem);
+        // white-space: pre-line;
+    }
+
+    p {
+        @include appText;
+    }
+
+    &.empPage {
+        padding: 4rem 0;
+        background-color: rgba($color: #000000, $alpha: 0.05);
+
+        h2 {
+            @include appTitle(2rem);
+            white-space: pre-line;
+        }
+
+        p {
+            @include appText();
+            line-height: 1.6rem;
+            width: 85%;
+        }
+
+        a {
+            width: 18.5rem;
+        }
+
+        img {
+            max-width: 11rem;
+            margin: 0 0 3rem 0;
+        }
+
+        .nd {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

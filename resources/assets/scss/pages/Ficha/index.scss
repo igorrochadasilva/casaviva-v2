@@ -1,3 +1,10 @@
+@import '../../utils/styleguide.scss';
+@import '../../utils/fonts.scss';
+@import '../../utils/cv-icons-font.scss';
+
+.container_app {
+  display: block;
+}
 
 .localization_text {
   margin-top: 1.2rem;
@@ -12,11 +19,13 @@
   .sectionSeparator {
     display: flex;
     justify-content: center;
+
     hr {
       border-top: 1px solid rgba($color: $black-two, $alpha: 0.1);
       width: 100%;
       margin: 0 auto;
     }
+
     // st, nd, rd, th1, th2, th3
 
     &.st {
@@ -96,6 +105,7 @@
     .container_app {
       padding-top: 2.5rem;
     }
+
     h1 {
       @include appTitle(1.25rem);
     }
@@ -121,6 +131,7 @@
 
       .el-col {
         margin-bottom: 1.5rem;
+
         &:last-child {
           margin-bottom: 0;
         }
@@ -237,6 +248,7 @@
         align-items: center;
         padding: 0 1rem;
         text-align: center;
+
         img {
           min-width: unset;
           width: 5.5rem;
@@ -282,6 +294,7 @@
         // @include appTitle(0);
         font-size: 1.65rem;
         margin-bottom: 0;
+
         small {
           display: block;
           font-weight: 400;
@@ -321,9 +334,11 @@
 
     .el-col {
       margin-bottom: 2.5rem;
+
       &:last-child {
         margin-bottom: 0;
       }
+
       &:first-child {
         margin-bottom: 2.5rem;
       }
@@ -338,6 +353,7 @@
       min-width: 100%;
       display: block;
     }
+
     h2 {
       @include appTitle(3rem);
     }
@@ -433,6 +449,7 @@
 
   #datasheetSection {
     border-bottom: none;
+
     .container_app {
       padding-bottom: 4rem;
     }
@@ -464,14 +481,17 @@
       &.st {
         padding-top: 4.5rem;
       }
+
       &.nd {
         padding-top: 3.5rem;
         padding-bottom: 3.5rem;
       }
+
       &.rd {
         padding-bottom: 3.5rem;
         padding-top: 2rem;
       }
+
       &.th1 {
         padding-top: 6rem;
         padding-bottom: 3.5rem;
@@ -484,6 +504,7 @@
 
     #tourSection {
       padding: 0 !important;
+
       h2 {
         margin-bottom: 2rem !important;
       }
@@ -510,6 +531,7 @@
           width: 3.5rem;
         }
       }
+
       iframe {
         min-height: unset;
         height: 25rem;
@@ -520,9 +542,11 @@
   #galeryMobile {
     position: relative;
     margin-bottom: 3.5rem;
+
     .item {
       display: flex;
       align-items: center;
+
       img {
         min-width: 100%;
         position: relative;
@@ -547,6 +571,7 @@
     p {
       width: 100% !important;
     }
+
     img {
       max-width: 14rem !important;
       margin: 3rem auto 0 auto !important;
@@ -594,6 +619,7 @@
     .container_app {
       padding: 0 !important;
     }
+
     h2 {
       padding-left: 1.75rem;
       margin-bottom: 2rem;
@@ -631,6 +657,7 @@
 
   #plantas {
     padding: 0 !important;
+
     h2 {
       padding: 0 1.75rem 0 1.75rem !important;
     }
@@ -644,6 +671,7 @@
 
 
 @media only screen and (max-width: 767px) {
+
   #plantas,
   #tourSection,
   #location {
@@ -654,10 +682,12 @@
     .slick-prev {
       left: 1.25rem !important;
     }
+
     .slick-list {
       margin-top: 1.85rem;
     }
   }
+
   .ficha-empreendimento {
     .slick-list {
       width: 100% !important;
@@ -720,6 +750,7 @@
   .slick-next,
   .slick-prev {
     z-index: 3;
+
     &:before {
       color: #000;
       line-height: 0;
@@ -743,18 +774,16 @@
     left: 3.5rem;
   }
 }
+
 #galeryMobile {
   .slick-track {
     display: flex;
     align-items: center;
   }
 }
-.empLightbox {
-  .vue-lb-info {
-    @include montserrat();
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.25rem;
+
+.ReactModalPortal {
+  .ReactModal__Overlay {
+    display: none;
   }
 }
