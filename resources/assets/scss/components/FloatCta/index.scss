@@ -42,6 +42,7 @@
             cursor: pointer;
         }
     }
+
     .menuFloat {
         -webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.75);
@@ -143,4 +144,173 @@
             }
         }
     }
+}
+
+//modal style
+#dialogFab {
+  display: none;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  margin: 0;
+  text-align: center;
+  z-index:2003;
+
+  &.show{
+    display: block;
+  }
+
+  .el-dialog {
+    width: 44rem;
+    max-width: 85%;
+    min-height: 34rem;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    margin: 6% auto 0 auto;
+    flex-direction: column;
+
+    // top: 45%;
+    // transform: translateY(-50%);
+  }
+  .el-dialog__header {
+    padding: 0 !important;
+    width: 100%;
+    text-align: right;
+    flex: initial;
+
+    .el-dialog__headerbtn{
+
+      i.el-dialog__close{
+        position: relative;
+        left: -1rem;
+
+        &::before{
+          content: "\e6db";
+        }
+      }
+    }
+  }
+
+  .el-dialog__body{
+    flex: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    color: $cherry;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    word-break: normal;
+  }
+
+  button.el-dialog__headerbtn {
+    font-size: 3rem !important;
+    top: 1rem;
+    right: 1rem;
+
+    i {
+      color: $pinkish-red !important;
+    }
+  }
+
+  .step1,
+  .stepCliente,
+  .stepNCliente {
+    padding: 0rem 2.5rem 2.5rem 3rem !important;
+  }
+  .stepNCliente {
+    padding: 0rem 3rem 1.5rem 3rem !important;
+
+    form {
+      margin-top: 2.5rem;
+    }
+    input {
+      border-color: $cherry !important;
+      color: $cherry !important;
+      border-radius: 1.25rem;
+      width: 100%;
+
+      &::placeholder {
+        color: $cherry;
+      }
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
+  .wrapButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a {
+      width: 30rem;
+      padding: 1.25rem 0;
+    }
+    .btn-primary-white {
+      border: 2px solid $cherry;
+      color: $cherry;
+      margin-bottom: 2rem;
+      font-size: 1.25rem;
+
+      &:hover,
+      &:active {
+        background-color: $cherry;
+        color: #fff;
+      }
+
+      &:after {
+        content: unset;
+      }
+    }
+  }
+
+  .goback {
+    color: $cherry;
+    font-size: 2rem;
+    bottom: 1.5rem;
+    cursor: pointer;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #dialogFab {
+    h2 {
+      font-size: 3rem !important;
+    }
+    .el-dialog {
+      max-width: 95%;
+
+      a {
+        max-width: 80%;
+      }
+    }
+  }
+}
+
+.rc-modal{
+  z-index:2002;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+  background: #000;
+  display: none;
+
+  &.show{
+    display: block;
+  }
 }

@@ -91,8 +91,42 @@ const DestaquesSection = (props) => {
                     </div>
                 </Slider>
             </div>
-        </section>
-    )
+          </div>
+          <div className="item">
+            <div type-box="home" className="boxEmpreendimento">
+              <a href="/ficha/lyne-pirituba" className="">
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcSet="https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/thumb_desk_mobile.png"
+                  />
+                  <source srcSet="https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/thumb_desk_mobile.png" />
+                  <img
+                    src="https://casaviva-prod.s3.us-east-1.amazonaws.com/public/current-build/img/thumb_desk_mobile.png"
+                    alt="Imagem do empreendimento CasaViva Pirituba - Uma piscina"
+                    className="img-fluid"
+                  />
+                </picture>
+                <div className="content">
+                  <h3>Lyne Pirituba</h3>
+                  <ul>
+                    <li>
+                      <i className="cv-icons cv-beds"></i>
+                      <span>2 dorms com ou sem varanda</span>
+                    </li>
+                    <li>
+                      <i className="cv-icons cv-location-mark"></i>
+                      <span>Em frente a estação Pirituba</span>
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+        </Slider>
+      </div>
+    </section>
+  )
 }
 
 export default DestaquesSection
