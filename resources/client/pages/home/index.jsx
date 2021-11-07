@@ -10,7 +10,7 @@ import InstagramSection from '../../components/InstagramSection'
 import FaleConosco from '../../components/FaleConosco'
 import Simular from '../../components/Simulador/index'
 
-import '../../../assets/scss/pages/Home/index.scss'
+import '../../../assets/scss/pages/NossosProdutos/index.scss'
 
 const Home = () => {
   return (
