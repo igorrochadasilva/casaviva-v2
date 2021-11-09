@@ -1,10 +1,48 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 
 //react components
 import { useForm } from 'react-hook-form'
 import InputMask from 'react-input-mask'
+import Select from 'react-dropdown-select'
 
 const Simular = () => {
+  const checkbox = useRef(null)
+  const inputCheckbox = useRef(null)
+
+  const [inputFgts, setInputFgts] = useState(false)
+
+  const options = [
+    { value: 'Sim', label: 'Sim' },
+    { value: 'Não', label: 'Não' },
+  ]
+
+  const {
+    register,
+    handleSubmit,
+    watch,
+    reset,
+    formState: { errors },
+  } = useForm()
+
+  //evento de checkbox
+  const handleCheckBoxClick = () => {
+    const { current } = checkbox
+    current.classList.contains('checked')
+      ? current.classList.remove('checked')
+      : current.classList.add('checked')
+  }
+
+  //abrir input de inserção de fgts
+  const OpenFgts = (value) => {
+    value[0].value === 'Sim' ? setInputFgts(true) : {}
+  }
+
+  //enviar dados
+  const onSubmit = (data) => {
+    console.log(data)
+  }
+
+  console.log(watch())
   return (
     <div>
       <section id="simulacaoSec">
@@ -22,16 +60,18 @@ const Simular = () => {
               />
             </div>
             <div className="el-col el-col-24 el-col-xs-24 el-col-sm-13 flex-52">
-              <form id="formSimulacao">
+              <form id="formSimulacao" onSubmit={handleSubmit(onSubmit)}>
                 <div className="wrapper">
                   <div className="appInput el-input">
                     <input
                       type="text"
                       autoComplete="off"
                       placeholder="Digite seu nome"
-                      required="required"
                       className="el-input__inner wd-100"
+                      {...register('nome', { required: 'Campo obrigatório.' })}
+                      id="nome"
                     />
+                    {errors.nome && <p>{errors.nome.message}</p>}
                   </div>
                 </div>
                 <div className="el-row n-ml-10 n-mr-10 dp-flex">
@@ -42,22 +82,30 @@ const Simular = () => {
                           type="email"
                           autoComplete="off"
                           placeholder="Digite seu e-mail"
-                          required="required"
                           className="el-input__inner"
+                          {...register('email', { required: 'Campo obrigatório.' })}
+                          id="email"
                         />
+                        {errors.email && <p>{errors.email.message}</p>}
                       </div>
                     </div>
                   </div>
                   <div className="el-col el-col-24 el-col-xs-24 el-col-sm-12 pl-10">
                     <div className="wrapper">
                       <div className="appInput el-input">
-                        <input
+                        <InputMask
                           type="tel"
                           autoComplete="off"
                           placeholder="Digite seu telefone"
-                          minLength="14"
-                          required="required"
                           className="el-input__inner"
+                          mask="(99) 99999-9999"
+                          type="text"
+                          {...register('telefone', {
+                            required: 'Campo obrigatório.',
+                            minLength: 14,
+                          })}
+                          name="telefone"
+                          id="telefone"
                         />
                       </div>
                     </div>
@@ -67,13 +115,18 @@ const Simular = () => {
                   <div className="el-col el-col-24 el-col-xs-24 el-col-sm-12 pr-10">
                     <div className="wrapper">
                       <div className="appInput el-input">
-                        <input
-                          type="tel"
+                        <InputMask
+                          type="text"
                           autoComplete="off"
-                          maxLength="11"
                           placeholder="Digite sua renda"
-                          required="required"
                           className="el-input__inner"
+                          mask="R$ 9.999,99"
+                          {...register('renda', {
+                            required: 'Campo obrigatório.',
+                            minLength: 14,
+                          })}
+                          name="renda"
+                          id="renda"
                         />
                       </div>
                     </div>
@@ -82,43 +135,44 @@ const Simular = () => {
                     <div className="wrapper">
                       <div className="el-select appInput" required="required">
                         <div className="el-input el-input--suffix">
-                          <input
-                            type="text"
-                            readOnly="readOnly"
-                            autoComplete="off"
+                          <Select
                             placeholder="Possui FGTS?"
-                            className="el-input__inner"
+                            handle={true}
+                            valueField="fgts"
+                            color="#f5f7fa"
+                            dropdownHeight="300px"
+                            options={options}
+                            onChange={(val) => OpenFgts(val)}
                           />
-                          <span className="el-input__suffix">
-                            <span className="el-input__suffix-inner">
-                              <i className="el-select__caret el-input__icon el-icon-arrow-up"></i>
-                            </span>
-                          </span>
-                        </div>
-                        <div className="el-select-dropdown el-popper dp-nn mw-custom">
-                          <div className="el-scrollbar">
-                            <div className="el-select-dropdown__wrap el-scrollbar__wrap n-mb-17 n-mr-17">
-                              <ul className="el-scrollbar__view el-select-dropdown__list">
-                                <li className="el-select-dropdown__item">
-                                  <span>Sim</span>
-                                </li>
-                                <li className="el-select-dropdown__item">
-                                  <span>Não</span>
-                                </li>
-                              </ul>
-                            </div>
-                            <div className="el-scrollbar__bar is-horizontal">
-                              <div className="el-scrollbar__thumb tsf-translateX-0"></div>
-                            </div>
-                            <div className="el-scrollbar__bar is-vertical">
-                              <div className="el-scrollbar__thumb tsf-translateX-0"></div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                {inputFgts && (
+                  <div className="el-row n-ml-10 n-mr-10 dp-flex">
+                    <div className="el-col el-col-24 el-col-xs-24 el-col-sm-12 pr-10">
+                      <div className="wrapper">
+                        <div className="appInput el-input">
+                          <InputMask
+                            type="text"
+                            autoComplete="off"
+                            placeholder="Digite seu FGTS"
+                            className="el-input__inner"
+                            mask="R$ 999.999,99"
+                            {...register('fgts', {
+                              required: 'Campo obrigatório.',
+                            })}
+                            name="fgts"
+                            id="fgts"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="el-col el-col-24 el-col-xs-24 el-col-sm-12 pr-10"></div>
+                  </div>
+                )}
+
                 <div className="el-row n-ml-10 n-mr-10 dp-flex">
                   <div className="el-col el-col-24">
                     <div
@@ -129,13 +183,22 @@ const Simular = () => {
                     >
                       <label className="el-checkbox" required="required">
                         <span className="el-checkbox__input">
-                          <span className="el-checkbox__inner checkbox-styled"></span>
+                          <span
+                            className="el-checkbox__inner checkbox-styled"
+                            ref={checkbox}
+                            onClick={() => handleCheckBoxClick()}
+                          ></span>
                           <input
+                            ref={inputCheckbox}
                             type="checkbox"
                             aria-hidden="false"
                             name="agree"
                             className="el-checkbox__original"
-                            value=""
+                            {...register('agree', {
+                              required: 'Campo obrigatório.',
+                            })}
+                            defaultChecked={false}
+                            nome="agree"
                           />
                         </span>
                         <span className="el-checkbox__label">
