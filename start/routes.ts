@@ -21,6 +21,7 @@
 import Route from '@ioc:Adonis/Core/Route'
 import { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 // Other Routes...
+/*
 Route.get('/', async ({ view }: HttpContextContract) => {
   return view.render('index')
 }).as('not_found')
@@ -60,3 +61,13 @@ Route.get('/termos-e-condicoes', async ({ view }: HttpContextContract) => {
 Route.get('/politica-de-privacidade', async ({ view }: HttpContextContract) => {
   return view.render('index')
 })
+
+Route.get('/ficha/morumbi', async ({ view }: HttpContextContract) => {
+  return view.render('index')
+})
+*/
+
+Route.get('*', async ({ view }: HttpContextContract) => {
+  return view.render('index')
+})
+
