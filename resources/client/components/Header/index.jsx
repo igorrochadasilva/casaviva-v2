@@ -30,13 +30,13 @@ const Header = () => {
                   <a href="/nossos-produtos">Nossos produtos</a>
                 </li>
                 <li className="link in menu.links">
-                  <a href="/">Casa Verde e Amarela</a>
+                  <a href="/minha-casa-minha-vida">Casa Verde e Amarela</a>
                 </li>
                 <li className="link in menu.links">
-                  <a href="/">Espaço cliente</a>
+                  <a href="https://casaviva.freshdesk.com/support/login">Espaço cliente</a>
                 </li>
                 <li>
-                  <a href="/" className="menu-button">
+                  <a href="/simulador" className="menu-button">
                     Simule agora
                   </a>
                 </li>

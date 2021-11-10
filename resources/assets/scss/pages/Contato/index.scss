@@ -376,4 +376,40 @@
       }
     }
   }
+
+  .react-dropdown-select {
+    border: 0;
+    font-size: 1.25rem;
+    border: 1px solid #fff;
+    border-radius: 1.75rem;
+    height: 4.28rem;
+    color: #fff;
+    background-color: transparent;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-left: 1.25rem;
+
+    .react-dropdown-select-content {
+      height: 4.28rem;
+      display: flex;
+      align-items: center;
+
+      .react-dropdown-select-input {
+        border: 0;
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    .react-dropdown-select-dropdown {
+      .react-dropdown-select-item {
+        color: #606266;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .dp-nn{
+    display:none;
+  }
 }

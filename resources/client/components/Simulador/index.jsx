@@ -7,7 +7,6 @@ import Select from 'react-dropdown-select'
 
 const Simular = () => {
   const checkbox = useRef(null)
-  const inputCheckbox = useRef(null)
 
   const [inputFgts, setInputFgts] = useState(false)
 
@@ -34,11 +33,13 @@ const Simular = () => {
 
   //abrir input de inserção de fgts
   const OpenFgts = (value) => {
-    value[0].value === 'Sim' ? setInputFgts(true) : {}
+    value[0].value === 'Sim' ? setInputFgts(true) : setInputFgts(false)
+    console.log('clicado no OpenFgts')
+    console.log(inputFgts)
   }
 
   //enviar dados
-  const onSubmit = (data) => {
+  const SendForm = (data) => {
     console.log(data)
   }
 
@@ -60,7 +61,7 @@ const Simular = () => {
               />
             </div>
             <div className="el-col el-col-24 el-col-xs-24 el-col-sm-13 flex-52">
-              <form id="formSimulacao" onSubmit={handleSubmit(onSubmit)}>
+              <form id="formSimulacao" onSubmit={handleSubmit(SendForm)}>
                 <div className="wrapper">
                   <div className="appInput el-input">
                     <input
@@ -149,7 +150,7 @@ const Simular = () => {
                     </div>
                   </div>
                 </div>
-                {inputFgts && (
+                {inputFgts === true ? (
                   <div className="el-row n-ml-10 n-mr-10 dp-flex">
                     <div className="el-col el-col-24 el-col-xs-24 el-col-sm-12 pr-10">
                       <div className="wrapper">
@@ -171,7 +172,7 @@ const Simular = () => {
                     </div>
                     <div className="el-col el-col-24 el-col-xs-24 el-col-sm-12 pr-10"></div>
                   </div>
-                )}
+                ) : null}
 
                 <div className="el-row n-ml-10 n-mr-10 dp-flex">
                   <div className="el-col el-col-24">
@@ -189,7 +190,6 @@ const Simular = () => {
                             onClick={() => handleCheckBoxClick()}
                           ></span>
                           <input
-                            ref={inputCheckbox}
                             type="checkbox"
                             aria-hidden="false"
                             name="agree"
